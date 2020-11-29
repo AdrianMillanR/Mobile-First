@@ -163,3 +163,108 @@ main{
     padding: 7px;
     border-radius: 8px;
 }
+.main-product-detail{
+    position: relative;/*esta propiedad nos permite que los elementos hijos que tengan "position: aboslute"
+     se  basen en este elemento padre para definir su  posición con top, bot, left y right*/
+    width: 100vw;
+    min-width: 320px;
+    background-color: var(--warm-black);
+    color:#808080;
+    padding-top: 55px;
+    height: auto;
+    padding-bottom: 20px;
+}
+.main-product-detail .batata-icon{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../assets/icons/logo-icon.svg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    position: absolute;/*este elemento definirá su posicion con top,bottom,left y righ, usando al padre
+    mas directo que tenga con "postion:relative" como referencia*/
+    top:-17px;
+    left: calc(50% - 17px);
+}
+.main-product-detail--title h2{
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--just-white);
+    margin-bottom: 20px;
+}
+.main-product-detail--title p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #808080;
+    margin-bottom: 30px;
+}
+.product-detail--card{
+    background-color: var(--black);
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.clock{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/icons/clock.svg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+.eye{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/icons/eye.svg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+.dolar{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/icons/dollar-sign.svg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+.check{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/icons/check-circle.svg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+.product--card-title{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.product--card-body{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+
+}

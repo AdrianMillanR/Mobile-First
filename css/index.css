@@ -92,7 +92,7 @@ header img{
     background-image: url("../assets/icons/arrow-down.svg");
 }
 
-/*---------------------------------------------BODY----------------------------------------------------------*/
+/*---------------------------------------------MAIN----------------------------------------------------------*/
 main{
     width: 100vw;
     height: auto;
@@ -151,7 +151,15 @@ main{
 
 
 }
+.main-tables-container{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap:20px;
+}
 .main-currency-table{
+    scroll-snap-align: center;
     text-align: start;
     margin-left: 25%;
     width: 60%;
